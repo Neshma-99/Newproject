@@ -1,17 +1,4 @@
-TIC TAC TOE
 
-#Algorithm:
-'''-->3 * 3 board
--->handled the turns
--->players required(X and O)
--->decide which player will start the game
--->flip players (or) swap the players
--->check who is the winner:
-   --->rows
-   --->columns
-   -->diagonals
--->declare that winner
--->display the result as draw'''
 
  
 board=["-","-","-",
