@@ -99,3 +99,28 @@ def check_dia():
         return board[4]
     elif dia2:
         return board[6]
+def check_draw():
+    global gameisgoing
+    if board[0] and board[1] and board[2] and board[3] and board[4] and board[5] and board[6] and board[7] and board[8] != "-":
+        gameisgoing=False
+        print("Match is Drawn")
+
+
+
+def play_game():
+    global gameisgoing
+    while gameisgoing:
+        display_board()
+
+        handle_turns()
+
+        swap_players()
+
+        check_who_is_the_winner()
+
+    if winner=="X":
+        print("X is the winner")
+    elif winner=="O":
+        print("O is the winner")
+
+play_game()
